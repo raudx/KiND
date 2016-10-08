@@ -1,0 +1,6 @@
+define 1m : 
+	["and",
+	"or"]
+define <stats...> :
+	["and"]
+

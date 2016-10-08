@@ -1,0 +1,40 @@
+define Add : 
+	[ null output Store the addition of #1 and #2 in it.
+	Add 1n to 2n
+	Add 1n and 2n
+	Add 1n with 2n ]
+define Multiply : 
+	[ null output Store the multiplication of #1 and #2 in it.
+	Multiply 1n with 2n
+	Multiply 1n and 2n 
+	Multiply 1n by 2n ]
+define Divide : 
+	[ null output Store the division of #1 and #2 in it.
+	Divide 1n by 2n ]
+define Subtract :
+	[ null output Store the subtraction of #1 from #2 in it.
+	Subtract 1n from 2n ]	
+define addition :
+	[ integer output $ #1 + #2 @.
+	the addition of 1n and 2n ]
+define si :
+	[ integer output $ (#1 * #2 * #3)/100 @.
+	the si when principle is 1n rate is 2n and time is 3n ]
+define sum :
+	[ integer output $ #1 + #2 @.
+	the sum of 1n and 2n ]
+define summation :
+	[ integer output $ #1 + #2 @. 
+	the summation of 1n and 2n ]
+define subtraction :
+	[ integer output $ #2 - #1 @.
+	the subtraction of 1n from 2n ]
+define multiplication :
+	[ integer output $ #1 * #2 @.
+	the multiplication of 1n and 2n ]
+define product :
+	[ integer output $ #1 * #2 @.
+	the product of 1n and 2n ]
+define division :
+	[ integer output $ #1 / #2 @.
+	the division of 1n by 2n ]

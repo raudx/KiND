@@ -1,0 +1,22 @@
+define Store :
+	[ null output $ #1 in <var> @
+	Store 1n in <var> ]
+	[ null output $ #1 as <const> @
+	Store 1n as <var> ]
+define Define :
+	[ null output $ <var> in <sym> @
+	Define <var> ]
+	[ null output $ <var[]> in <sym> @
+	Define list named <var> ]
+	[ null output $ <val...> in <var[]> @
+	Define list named <var> with items <val...> ]
+define input :	
+	[ null output $ input in <var> @
+	Store input in <var> ]
+	[ null output $ input as <const> @
+	Store input as <const> ]
+define Print :
+	[ null output $ print <var> @ 
+	Print <var> ]
+	[ null output $ print <val...> @ 
+	Print <val...> ]

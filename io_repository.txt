@@ -1,0 +1,39 @@
+define Store :
+	[ null output $ #1 in <var> @.
+	x+ Store 1m in <var>
+	x+ Store 1v in <var> ]
+	[ null output $ #1 as <var> @.
+	x+ Store 1m as <var>
+	x+ Store 1v as <var> ]
+define store :
+	[ null output Store #1 in <var>.
+	<+ store 1v in <var> ]
+	[ null output Store #1 as <var>.
+	<+ store 1v as <var> ]
+define Define :
+	[ null output $ <var> in <sym> @.
+	x+ Define <var> ]
+	[ null output $ <var[]> in <sym> @.
+	x+ Define list named <var> ]
+	[ null output $ <val...> in #1 @.
+	x+ Define list named <var> with items 1m ]
+define define :
+	[ null output Define <var>.
+	<+ define <var> ]
+	[ null output Define list named <var>.
+	<+ define list named <var> ]
+	[ null output Define list named <var> with items 1m.
+	<+ define list named <var> with items 1m ]
+define input :	
+	[ null output $ input in <var> @.
+	Store input in <var> ]
+	[ null output $ input as <const> @.
+	Store input as <const> ]
+define Print :
+	[ null output $ Print #1 @.
+	x+ Print 1v
+	x+ Print 1m ]
+define print :
+	[ null output Print #1.
+	<+ print 1v
+	<+ print 1m ]

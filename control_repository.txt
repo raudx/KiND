@@ -1,0 +1,22 @@
+define Return :
+	[ null output $ return #1 @.
+	Return 1n ]
+define return :
+	[ null output $ return #1 @.
+	return 1n ]
+define If :
+	[ null output $ if #1 then #2 else #3 @.
+	If 1c then 2s else 3s ]
+define greater :
+	[ bool output $ #1 > #2 @.
+	1n is greater than 2n ]
+	[ bool output $ #1 >= #2 @.
+	1n is greater than or equal to 2n ]
+define less :
+	[ bool output $ #1 < #2 @.
+	1n is less than 2n ]
+	[ bool output $ #1 <= #2 @.
+	1n is less than or equal to 2n ]
+define equal :
+	[ bool output $ #1 == #2 @.
+	1n is equal 2n ]
